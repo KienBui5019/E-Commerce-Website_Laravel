@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Menu extends Model
+{
+    protected $table = 'menus';
+
+    protected $fillable = [
+        'name',
+        'link',
+        'type',
+        'parent_id',
+        'sort_order',
+        'table_id',
+        'position',
+        'status',
+        'created_by',
+        'updated_by',
+    ];
+
+    public $timestamps = true;
+}
